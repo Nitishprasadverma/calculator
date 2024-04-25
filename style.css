@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, #00AAFF, #fffb08);
+
+}
+
+.btn-container{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: minmax(100px, auto) repeat(5,100px);
+    min-height: 100vh;
+}
+
+.btn-container>button{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid #ffff;
+    background-color: aquamarine;
+}
+
+button:hover{
+    /* background-color: #300909; */
+    /* background: linear-gradient(to right, #00AAFF, #fffb08);
+    color:  #ffffff; */
+    
+}
+
+button.digit:hover{
+   background: linear-gradient(to right, #00AAFF, #fffb08);
+   color: #ffffff;
+   
+}
+
+
+.deteAll{
+    grid-column: span 2;
+}
+
+#equal{
+    grid-column: span 2;
+}
+
+.output{
+    grid-column: 1/-1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    color: #37d208;
+    font-size: 1.8rem;
+    background-color: rgb(10, 10, 12);
+}
+
+button#clear:hover{
+    background-color: rgb(194, 5, 5);
+}
+button.backspace:hover{
+background-color: rgb(212, 104, 104);
+color: #ffff;
+}
+button#equal:hover{
+background-color: rgb(7, 108, 29);
+color: white;
+}
+button.operators:hover{
+    background-color: grey;
+    color: white;
+}
+
+.backspace{
+    font-size: 10px;
+}
